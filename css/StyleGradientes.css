@@ -1,0 +1,32 @@
+
+.gradiente_3c{
+   background-image: linear-gradient(to right, #e4afcb 0%, #b8cbb8 0%, #b8cbb8 0%, #e2c58b 30%, #c2ce9c 64%, #7edbdc 100%);
+}
+.gradiente_2c{
+background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+}
+.gradiente_2cwrite{
+background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%); 
+}
+.gradiente_azulBlanco{
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+.gradiente_verdeNegro{
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+}
+.gradiente_plomoOscuro{
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+.gradiente_azulOscuro{
+    background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+.gradiente_blacoAzulado{
+    background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+.gradiente_azulOscuroText{
+    color: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+}
+
+
+
+
