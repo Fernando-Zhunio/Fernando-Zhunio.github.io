@@ -25,22 +25,47 @@
 <body>
 
     <!-- Main navigation -->
-    <div id="avatar" class=" h-50 rounded  border border-primary shadow">
-        <button id="btChatl" type="button" class="close position-absolute" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span> </button>
-        <div id="chat" class="row w-100 h-100 bg-info">
-                <div  class="text-white w-75 p-2 my-2">
-                    <h6 class="text">Hola tiene alguna pregunta</h5>
+
+    
+
+
+ <div id="avatar"   class="hidden bg-dark z-depth-3 d-none d-sm-block position-fixed rounded-lg">
+            <div id="CabezeraChat" class="bg-dark text-white text-center">
+               <img src="img/avatarChatMan.png" alt="imagen avatar chat" class=" img-fluid p-2 mt-1 "/>
+              <p class=" m-auto h6">Chat en vivo</p>
+               <button  type="button" class="close px-3" data-dismiss="modal" aria-label="Close">
+                   <span aria-hidden="true">&times;</span> </button>
+            </div>
+            <div id="chat" >
+                
+                    <div  class="chatAdmin text-white my-2 ">
+                      <h6 class="  bg-default p-2">Hola tiene alguna pregunta</h6>
+                    </div>
+                
+                <div  class="  chatCliente text-white  my-2 ">
+                  <h6 class="  bg-warning p-2">Hola  todos aqui</h6>
                 </div>
-        </div>        
-        <img src="img/avatarChatMan.png" alt="imagen avatar chat" class="avatarClass  p-2 mt-1"/>
+                <div  class=" bg-default chatAdmin text-white  my-2 ">
+                  <h6 class="  p-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolores ut id animi, nihil placeat est blanditiis cupiditate saepe nisi aspernatur impedit labore? Sunt atque a hic odit, voluptatum totam?</h6>
+                </div>
+            </div>         
+              
+               <div id="textChat" class=" bg-transparent">
+               <textarea id="chatText" type="text"  class=" my-3 mx-1" ></textarea>
+               <button id="btChat1" class="btn bg-primary rounded-pill my-2"> > </button>
+               </div>
+               
+              <!-- <input id="textChat" type="text"  class="mb-2 ml-1">
+               <label data-error="wrong" data-success="right" for="form34">Tu nombres</label> -->
+         </div>
+
+
        
-        <div id="textChat" class="row">
-            <textarea  type="text"  class=" md-textarea form-control col-md-9 mb-2 ml-1" rows="4"></textarea>
-        </div>
-       <!-- <input id="textChat" type="text"  class="mb-2 ml-1">
-        <label data-error="wrong" data-success="right" for="form34">Tu nombres</label> -->
-  </div>
+
+         <div class="burbujaChat">
+         <img src="img/avatarChatMan.png" alt="imagen avatar chat" class=" img-fluid p-2 mt-1 "/>         
+         </div>
+    
       
     
 
@@ -130,7 +155,7 @@
             <!-- Mask & flexbox options-->
             <div  class=" mask img-intro d-flex justify-content-center align-items-center" poster="https://mdbootstrap.com/img/Photos/Others/background.jpg">
                 <!-- Content -->
-                <div id="particles-js"></div>
+                <div id="particles-js" class=" d-none d-sm-block"></div>
                 <div id="miIntro" class=" container px-md-3 px-sm-0">
                  
                     <!--Grid row-->
@@ -217,14 +242,14 @@
 
                         <!-- <div  class="alert alert-warning alert-dismissible fade" role="alert">
                          <strong>Error corrija!</strong> error de llenado de formulario. -->
-                        <button id="btcloseModal" type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <!-- <button id="btcloseModal" type="button" class="close" data-dismiss="alert" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
-                              </button>
+                              </button> -->
                 </div>
-                    </div>
-                </div>
+              </div>
+         </div>
               
-            </div>
+            
 
             <!--fin modalllllllllllllllll-->
 
@@ -245,13 +270,10 @@
 
 
 
-
-
-
    <div id="skin">
       
        <div class="mask container">
-            <div id="container1"></div>
+            <div id="container1" class=" d-none d-sm-block"></div>
            <!-- Section: Features v.4 -->
            <section class="my-5">
                <!-- Section heading -->
@@ -795,7 +817,7 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
             © 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            <a href="https://fernando-zhunio.github.io"> FZ-Enterprise.com</a>
         </div>
         <!-- Copyright -->
 
@@ -820,6 +842,8 @@
   <script src="Mis_Js/EnviarMensajeAjax.js"></script>
   <script src="Mis_Js/jquery.numeric.js"></script>
   <script src="Mis_Js/validarNumeros.js"></script>
+  <script src="Mis_Js/Chat.js"></script>
+
 
         <script src="js/anime.min.js"></script>
         <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
